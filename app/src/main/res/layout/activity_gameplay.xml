@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gameplay"
+    android:background="#88009688">
+
+
+    <TextView
+        android:id="@+id/TV_game_timer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timer: 00"
+        android:textColor="#A8673AB7"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/TV_game_score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Score: 00 "
+        android:textColor="#A8673AB7"
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:id="@+id/TV_game_question2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A + B"
+        android:textColor="#A8673AB7"
+        android:textSize="60sp"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/TV_game_answer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_game_question2"
+        android:layout_centerHorizontal="true"
+        android:text="Answer"
+        android:textColor="#A8673AB7"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        >
+    <Button
+        android:id="@+id/btn_game_true2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct"
+        android:layout_weight="1"
+        android:background="#A8673AB7"
+
+        />
+
+        <Button
+            android:id="@+id/btn_game_false2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="False"
+            android:layout_weight="1"
+            android:background="#B0F30F2A"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
